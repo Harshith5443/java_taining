@@ -126,4 +126,25 @@ Context:
     ### Use Bootstrap 5
     ### Single Page Website
     ### Add Animations Wherever  necessary
+
+  ## Linear Search in Java
+
+```java
+// Linear Search checks every element one by one
+class LinearSearch {
+    public static int search(int arr[], int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) return i; // Found target at index i
+        }
+        return -1; // Not found
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {10, 20, 30, 40};
+        int target = 30;
+        int result = search(arr, target);
+        System.out.println(result == -1 ? "Not Found" : "Found at index " + result);
+    }
+}
+
     
